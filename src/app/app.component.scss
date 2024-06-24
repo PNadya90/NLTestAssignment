@@ -1,0 +1,38 @@
+.test-client-container {
+    display: flex !important;
+    flex-direction: column;
+    overflow: auto;
+    padding: 5%;
+}
+.form-aside-container {
+    display: grid !important;
+    grid-template-columns: 30rem minmax(30rem, 39rem);
+    justify-content: center;
+    gap: 7rem;
+    aside {
+        display: flex;
+        gap: 2rem;
+        min-height: 45rem;
+        .widget-container {
+            border-radius: 2rem;
+            flex: 1;
+            background-color: var(--primary-color);
+            color: white;
+            .text {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 400;
+                padding: 10%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .form-aside-container {
+        display: block !important;
+        aside {
+            display: none !important;
+        }
+    }
+}
