@@ -1,0 +1,28 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+    form {
+        .submit-button {
+            background-color: black;
+            color: #ffff;
+            width: 100%;
+            height: 48px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.invalid-border {
+    border: 2px solid red;
+}
+.error-messsage {
+    color: red;
+}

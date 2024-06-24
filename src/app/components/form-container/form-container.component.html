@@ -1,0 +1,36 @@
+<div class="form-container">
+  <h1>Test Page</h1>
+  <form [formGroup]="form">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        formControlName="name"
+        [ngClass]="{
+          'invalid-border':
+            form.controls['name'].invalid &&
+            (form.controls['name'].dirty || form.controls['name'].touched)
+        }"
+      />
+    </div>
+    <div class="form-field">
+      <label for="name">Phone</label>
+      <input
+        id="phone"
+        type="text"
+        formControlName="phone"
+        [ngClass]="{
+          'invalid-border':
+            form.controls['phone'].invalid &&
+            (form.controls['phone'].dirty || form.controls['phone'].touched)
+        }"
+      />
+    </div>
+    <app-opening-sentence
+      formControlName="openingSentence"
+      [placeholders]="placeholdersList"
+    ></app-opening-sentence>
+    <button class="submit-button" (click)="onSubmit()">Submit</button>
+  </form>
+</div>
