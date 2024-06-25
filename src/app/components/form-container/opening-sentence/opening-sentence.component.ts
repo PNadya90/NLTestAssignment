@@ -46,13 +46,11 @@ export class OpeningSentenceComponent
 
   private lastCursorPosition: number = 0;
   public isNotValid: boolean = false;
-  private control: FormControl | undefined;
   constructor() {}
 
   ngAfterContentInit(): void {}
 
   validate(control: FormControl) {
-    this.control = control;
     if (this.value === '' || this.value == null) {
       this.isNotValid = true;
       return { required: true };
