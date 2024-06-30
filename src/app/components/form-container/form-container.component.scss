@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 5%;
     h1 {
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 15px;
         font-weight: 400;
     }
     form {
@@ -19,7 +20,6 @@
         }
     }
 }
-
 .invalid-border {
     border: 2px solid red;
 }

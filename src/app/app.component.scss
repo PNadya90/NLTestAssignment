@@ -1,21 +1,24 @@
 .test-client-container {
+    height: 100%;
     display: flex !important;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     overflow: auto;
-    padding: 5%;
 }
 .form-aside-container {
     display: grid !important;
     grid-template-columns: 30rem minmax(30rem, 39rem);
     justify-content: center;
-    gap: 7rem;
+    gap: 5%;
+    height: 80%;
+    align-items: center;
     aside {
         display: flex;
-        gap: 2rem;
-        min-height: 45rem;
+        min-height: 100%;
         .widget-container {
             border-radius: 2rem;
-            flex: 1;
+            flex-basis: 90%;
             background-color: var(--primary-color);
             color: white;
             .text {

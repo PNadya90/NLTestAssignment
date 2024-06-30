@@ -1,10 +1,3 @@
-.form-field div:focus {
-    border-color: var(--primary-color);
-    outline: none;
-}
-.form-field div:focus + .placeholders {
-    border-color: var(--primary-color);
-}
 .contenteditable {
     padding: 12px;
     font-size: 13px;
@@ -13,7 +6,6 @@
     border-radius: 12px 12px 0 0;
     border-bottom: none;
     color: var(--labels-color);
-    width: calc(100% - 28px);
     line-height: 1.5rem;
 }
 .placeholders {
@@ -21,7 +13,6 @@
     border: 2px solid var(--regular-field-color);
     border-radius: 0 0 12px 12px;
     padding: 12px;
-    width: calc(100% - 28px);
     button {
         margin: 2px;
     }
