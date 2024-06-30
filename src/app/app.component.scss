@@ -10,15 +10,15 @@
     display: grid !important;
     grid-template-columns: 30rem minmax(30rem, 39rem);
     justify-content: center;
-    gap: 5%;
-    height: 80%;
+    gap: 7%;
+    height: 75%;
     align-items: center;
     aside {
         display: flex;
         min-height: 100%;
         .widget-container {
             border-radius: 2rem;
-            flex-basis: 90%;
+            flex-basis: 98%;
             background-color: var(--primary-color);
             color: white;
             .text {
