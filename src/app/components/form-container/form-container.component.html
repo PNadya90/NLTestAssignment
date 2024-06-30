@@ -27,10 +27,13 @@
         }"
       />
     </div>
-    <app-opening-sentence
-      formControlName="openingSentence"
-      [placeholders]="placeholdersList"
-    ></app-opening-sentence>
+    <div class="form-field">
+      <label for="name">Openning Sentence</label>
+      <app-opening-sentence
+        formControlName="openingSentence"
+        [placeholders]="placeholdersList"
+      ></app-opening-sentence>
+    </div>
     <button class="submit-button" (click)="onSubmit()">Submit</button>
   </form>
 </div>

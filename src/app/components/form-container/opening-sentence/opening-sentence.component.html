@@ -1,20 +1,17 @@
-<div class="form-field">
-  <label for="name">Openning Sentence</label>
-  <div
-    class="contenteditable"
-    contenteditable="true"
-    #contenteditable
-    (input)="onInput($event)"
-    [class.error]="isNotValid"
-  ></div>
-  <div class="placeholders" [class.error]="isNotValid">
-    @for (placeholder of placeholders; track placeholder.value) {
-    <button
-      class="placeholder-button"
-      (click)="setPlaceholder(placeholder)"
-      contenteditable="false"
-    >
-      {{ placeholder.name }}</button
-    >}
-  </div>
+<div
+  class="contenteditable"
+  contenteditable="true"
+  #contenteditable
+  (input)="onInput($event)"
+  [class.error]="isNotValid"
+></div>
+<div class="placeholders" [class.error]="isNotValid">
+  @for (placeholder of placeholders; track placeholder.value) {
+  <button
+    class="placeholder-button"
+    (click)="setPlaceholder(placeholder)"
+    contenteditable="false"
+  >
+    {{ placeholder.name }}</button
+  >}
 </div>
